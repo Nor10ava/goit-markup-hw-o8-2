@@ -493,7 +493,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -507,31 +507,31 @@ button {
 
 @media (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero__overlay {
-    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero-tablet.jpg");
+    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 
 @media (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero-tablet@2x.jpg");
+    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 
 @media (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero@2x.jpg");
+    background-image: linear-gradient(to right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero@2x.jpg);
   }
 }
 
