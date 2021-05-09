@@ -1,0 +1,100 @@
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1190px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__overlay {
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+
+  background-image: linear-gradient(
+      to right rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../../images/hero.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 1190px) {
+    height: 600px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/hero@2x\.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/hero\.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          to right rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("../images/hero@2x\.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(
+        to right rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/hero.jpg);
+  }
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          to right rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("../images/hero@2x\.jpg");
+    }
+  }
+}
+
+.hero__title {
+  color: $secondary-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
+}
+
+.hero__button {
+  @extend %button;
+  margin-left: auto;
+  margin-right: auto;
+}
